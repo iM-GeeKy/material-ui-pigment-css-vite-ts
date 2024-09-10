@@ -1,5 +1,7 @@
-
-import { CheckCircle, Visibility, VisibilityOff } from "@mui/icons-material";
+import { useEffect, useState } from "react";
+import CheckCircle from '@mui/icons-material/CheckCircle';
+import Visibility from '@mui/icons-material/Visibility';
+import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import LoadingButton from "@mui/lab/LoadingButton";
 import CircularProgress from "@mui/material/CircularProgress";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -13,7 +15,6 @@ import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material-pigment-css/Container";
 import Stack from "@mui/material-pigment-css/Stack";
-import { useEffect, useState } from "react";
 
 function App(): JSX.Element | null {
   const [isPageLoading, setIsPageLoading] = useState(true);
