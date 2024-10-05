@@ -42,6 +42,8 @@ export default defineConfig(() => {
           "**/shared/utils/**",
           "**/index.tsx",
         ],
+        include: ["src/App.tsx", "**/components/**"],
+        reporter: ["text"],
       },
       exclude: [
         "**/node_modules/**",
@@ -53,6 +55,7 @@ export default defineConfig(() => {
         "**/index.tsx",
       ],
       environment: "jsdom",
+      globals: true,
     },
   };
 });
